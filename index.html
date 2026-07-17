@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>happy birthday pingping!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>happy birthday pingping!</title>
+</head>
+
+<body>
+    <!-- Present Screen -->
+    <div id="present-container">
+        <img src="present.png" alt="Present" id="present">
+        <p>present for you</p>
+    </div>
+
+    <!-- Letter Screen -->
+    <div id="letter-container">
+        <div id="letter">
+            <div class="letter-window">
+                <div class="letter-content">
+                    <div class="message-panel">
+                        <h1>happy birthday!</h1>
+                        <p>would you like to open it?</p>
+                    </div>
+
+                    <img src="present opened.png" class="Present" id="present-img" alt="Present">
+
+                    <div class="buttons" id="letter-buttons">
+                        <div class="yes-wrapper">
+                            <button class="btn yes-btn">yes</button>
+                        </div>
+
+                        <div class="no-wrapper">
+                            <button class="btn no-btn">no</button>
+                        </div>
+                    </div>
+
+                    <div id="post-actions" class="post-actions hidden">
+                        <div class="action-buttons">
+                            <button class="post-action-btn playlist-btn" data-target="playlist-panel">
+                                <span class="btn-icon"></span>
+                                <span class="btn-label">playlist</span>
+                            </button>
+                            <button class="post-action-btn photos-btn" data-target="photos-panel">
+                                <span class="btn-icon"></span>
+                                <span class="btn-label">photos</span>
+                            </button>
+                            <button class="post-action-btn letter-btn" data-target="letter-panel">
+                                <span class="btn-icon"></span>
+                                <span class="btn-label">letter</span>
+                            </button>
+                        </div>
+                        <div class="post-action-panels">
+                            <div id="playlist-panel" class="post-panel hidden">
+                                <h2>songs that remind me of you</h2>
+                                <ul class="playlist-list">
+                                    <li>
+                                        <span class="playlist-title">dari planet yg lain</span>
+                                        <audio controls preload="none">
+                                            <source src="dari planet yg lain.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">serta mulia</span>
+                                        <audio controls preload="none">
+                                            <source src="serta mulia.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">kanyaah</span>
+                                        <audio controls preload="none">
+                                            <source src="kanyaah.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">letter to my 13 year old self</span>
+                                        <audio controls preload="none">
+                                            <source src="letter to my 13 year old self.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">best friend</span>
+                                        <audio controls preload="none">
+                                            <source src="best friend.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">everything i know about love</span>
+                                        <audio controls preload="none">
+                                            <source src="everything i know about love.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">hopeless romantic</span>
+                                        <audio controls preload="none">
+                                            <source src="hopeless romantic.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                    <li>
+                                        <span class="playlist-title">teh hijau</span>
+                                        <audio controls preload="none">
+                                            <source src="teh hijau.mp3" type="audio/mpeg">
+                                        </audio>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="photos-panel" class="post-panel hidden">
+                                <div class="photo-grid"></div>
+                            </div>
+                            <div id="letter-panel" class="post-panel hidden">
+                                <p id="letter-body">happiest birthday lucky sperm! but i would say im the lucky one since i got to know you. i know it has not been easy but i hope as the year passes it becomes bearable. you know you keep on talking about finding love, but it is much closer than you think. it is within you, you are so full of love that it spills out, out of its jar and spread like a disease haha jk. i dont have to doubt or question myself when im with you, and you are so easy to love that it just becomes a daily occurrence for me to brought you up whenever im talking to someone. you have grown so much even if the world has not been kind to you, i hope you will always be healthy, wealthy, funny, happy, silly, and down to earth-y :p</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p id="final-text" class="final-text hidden"></p>
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
